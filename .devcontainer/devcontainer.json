@@ -1,7 +1,7 @@
 {
-  "name": "TFF Suspicious Activity Notebook",
-  "image": "mcr.microsoft.com/devcontainers/python:3.10",
-  "postCreateCommand": "pip install --upgrade pip && pip install --no-cache-dir tensorflow==2.14.0 tensorflow-federated==0.71.0 numpy==1.25 scipy jax jaxlib nest-asyncio matplotlib notebook ipykernel pandas scikit-learn",
+  "name": "TFF Python 3.9",
+  "image": "mcr.microsoft.com/devcontainers/python:3.9",
+  "postCreateCommand": "pip install --upgrade pip && pip install --no-cache-dir tensorflow-federated==0.72.0 gdown nest-asyncio matplotlib notebook ipykernel pandas scikit-learn && python -m ipykernel install --user --name tff39 --display-name 'Python 3.9 TFF'",
   "customizations": {
     "vscode": {
       "extensions": [
